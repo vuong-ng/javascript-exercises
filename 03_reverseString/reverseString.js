@@ -1,4 +1,9 @@
-const reverseString = function() {
+const reverseString = function(s) {
+    if (s.length <=1 ){
+        return s
+    }
+    return reverseString(s.slice(1, s.length)) + s[0];
+
 
 };
 
